@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+		<!-- Icons - Ionicons-->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<h1>User CRUD</h1>
+				<ul class="nav__social-media">
+					<li>
+						<a class="nav__social-link" href="">
+							<ion-icon class="nav__social-icon" name="logo-github"></ion-icon>
+						</a>
+					</li>
+					<li>
+						<a class="nav__social-link" href="">
+							<ion-icon
+								class="nav__social-icon"
+								name="logo-linkedin"
+							></ion-icon>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main class="main section">
+			<div class="main__container grid">
+				<div>
+					<form id="addUserForm">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required />
+
+						<label for="lastname">Last Name:</label>
+						<input type="text" id="lastname" name="lastname" required />
+
+						<label for="age">Age:</label>
+						<input type="text" id="age" name="age" required />
+
+						<button type="submit" id="btnCreateUser" class="btn">
+							New User
+						</button>
+					</form>
+				</div>
+				<div id="userList">
+					<h2>User List</h2>
+					<ul>
+						<li>
+							<p>Name:</p>
+							<p>Age:</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+
+		<script type="module" src="./src/js/main.js"></script>
+	</body>
+</html>
